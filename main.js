@@ -12,15 +12,15 @@
   ];
 
   const CATALOG = [
-    { image: 'images/cat-invernaderos-tradicionales.jpg', title: 'Invernaderos tradicionales' },
-    { image: 'images/cat-walia.jpg', title: 'Invernaderos inteligentes (WALIA)' },
-    { image: 'images/cat-malla-antihierba.jpg', title: 'Malla antihierba' },
-    { image: 'images/cat-tunel.jpg', title: 'Invernaderos túnel y multitúnel' },
-    { image: 'images/cat-riego.jpg', title: 'Instalaciones de riego' },
-    { image: 'images/cat-pantano.jpg', title: 'Cubrimientos de pantano' },
-    { image: 'images/cat-cercados.jpg', title: 'Cercados' },
-    { image: 'images/cat-llave-en-mano.jpg', title: 'Proyectos llave en mano' },
-    { image: 'images/cat-mantenimientos.jpg', title: 'Mantenimientos agrícolas' },
+    { image: 'assets/cat-invernaderos-tradicionales.jpg', title: 'Invernaderos tradicionales' },
+    { image: 'assets/cat-walia.jpg', title: 'Invernaderos inteligentes (WALIA)' },
+    { image: 'assets/cat-malla-antihierba.jpg', title: 'Malla antihierba' },
+    { image: 'assets/cat-tunel.jpg', title: 'Invernaderos túnel y multitúnel' },
+    { image: 'assets/cat-riego.jpg', title: 'Instalaciones de riego' },
+    { image: 'assets/cat-pantano.jpg', title: 'Cubrimientos de pantano' },
+    { image: 'assets/cat-cercados.jpg', title: 'Cercados' },
+    { image: 'assets/cat-llave-en-mano.jpg', title: 'Proyectos llave en mano' },
+    { image: 'assets/cat-mantenimientos.jpg', title: 'Mantenimientos agrícolas' },
   ];
 
   // --- Nav scroll state ---
