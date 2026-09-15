@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mateo e Hijo — Estructuras agrícolas desde 1979</title>
+<meta name="description" content="Mateo e Hijo: invernaderos, WALIA, mallas, riego, cercados y proyectos llave en mano. Desde 1979 protegiendo tus cosechas, tejiendo tus sueños.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-logo">
+    <img src="assets/logo-rect-white.webp" alt="Mateo e Hijo" class="logo-white">
+    <img src="assets/logo.png" alt="Mateo e Hijo" class="logo-color">
+  </div>
+  <button id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="navMenu">
+    <li class="has-dropdown">
+      <a href="#empresa">Empresa</a>
+      <div class="dropdown">
+        <a href="#empresa">Historia</a>
+        <a href="#empresa">Equipo</a>
+      </div>
+    </li>
+    <li class="has-dropdown">
+      <a href="#servicios">Productos</a>
+      <div class="dropdown" id="productosDropdown"></div>
+    </li>
+    <li><a href="walia.html">WALIA</a></li>
+    <li class="has-dropdown">
+      <a href="#formulario">Contacto</a>
+      <div class="dropdown">
+        <a href="#formulario" data-asunto="Solicitar presupuesto">Solicitar presupuesto</a>
+        <a href="#formulario" data-asunto="Conviértete en distribuidor">Conviértete en distribuidor</a>
+        <a href="#formulario" data-asunto="Trabaja con nosotros">Trabaja con nosotros</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <img src="images/hero.jpg" alt="Invernadero Mateo e Hijo" class="hero-img">
+  <div class="hero-scrim"></div>
+  <div class="hero-content">
+    <img src="assets/letras-white.webp" alt="MATEO E HIJO" class="hero-wordmark">
+    <p class="hero-tagline">46 años. Estructuras agrícolas. <span class="accent-green">Tejiendo tus sueños.</span></p>
+    <div class="hero-actions">
+      <a href="#servicios" class="btn btn-green">Nuestros servicios</a>
+      <a href="#formulario" class="btn btn-primary">Contacta</a>
+    </div>
+  </div>
+</header>
+
+<section id="empresa" class="company-strip">
+  <div class="stat-callout">
+    <div class="stat-value">46</div>
+    <div class="stat-label">años</div>
+    <div class="stat-range">1979–2025</div>
+  </div>
+  <div class="company-copy">
+    <h2>Un aliado estratégico para tus cosechas.</h2>
+    <p>Orihuela, Alicante · desde 1979.</p>
+  </div>
+</section>
+
+<section id="servicios" class="products-section">
+  <h2 class="section-heading">Productos</h2>
+  <div class="carousel">
+    <div class="carousel-viewport">
+      <div class="carousel-track" id="carouselTrack"></div>
+    </div>
+    <button class="carousel-btn carousel-prev" id="prevSlide" aria-label="Anterior">‹</button>
+    <button class="carousel-btn carousel-next" id="nextSlide" aria-label="Siguiente">›</button>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+</section>
+
+<section id="walia" class="walia-teaser">
+  <img src="images/walia-teaser.jpg" alt="WALIA" class="walia-img">
+  <div class="walia-scrim"></div>
+  <div class="walia-content">
+    <span class="badge badge-green">Fruit Attraction 2026</span>
+    <span class="walia-title">WALIA</span>
+    <p>El invernadero inteligente.</p>
+    <a href="walia.html" class="btn btn-green">Descúbrelo</a>
+  </div>
+</section>
+
+<section id="formulario" class="contact-section">
+  <h2 class="section-heading">Contacto</h2>
+  <form id="contactForm">
+    <div class="field">
+      <label for="asunto">Asunto</label>
+      <select id="asunto" name="asunto">
+        <option value="Solicitar presupuesto">Solicitar presupuesto</option>
+        <option value="Conviértete en distribuidor">Conviértete en distribuidor</option>
+        <option value="Trabaja con nosotros">Trabaja con nosotros</option>
+        <option value="Consulta general">Consulta general</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+      </div>
+      <div class="field">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+      </div>
+    </div>
+    <div class="field">
+      <label for="mensaje">Mensaje / Comentarios</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte…"></textarea>
+    </div>
+    <div class="checkbox-field">
+      <input type="checkbox" id="privacidad-check" required>
+      <label for="privacidad-check">He leído y acepto la <a href="#" id="openPrivacy">política de privacidad</a>.</label>
+    </div>
+    <button type="submit" class="btn btn-navy">Enviar solicitud</button>
+    <p id="formSentMsg" class="form-sent-msg" hidden>✓ Se ha abierto tu cliente de correo con la solicitud. ¡Gracias!</p>
+  </form>
+</section>
+
+<div id="privacyModal" class="modal-overlay" hidden>
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2>Política de Privacidad</h2>
+      <button id="closePrivacy" aria-label="Cerrar">×</button>
+    </div>
+    <div class="modal-body">
+      <p>En cumplimiento del Reglamento (UE) 2016/679 y de la Ley Orgánica de Protección de Datos de Carácter Personal, le informamos de que la identidad del responsable que trata sus datos es:</p>
+      <p class="modal-bold">MANTENIMIENTOS Y ESTRUCT. AGRÍCOLAS MATEO E HIJO, S.L.U.<br>CIF: B42531897<br>Ctra Los Vives, 13 · 03315 Orihuela (Alicante)<br><a href="mailto:administracion@mateoehijo.com">administracion@mateoehijo.com</a></p>
+      <p>Los datos personales que tratamos en nuestra organización son los mínimos necesarios para contactar con usted, con la finalidad de enviarle información, incluida, en su caso, la comercial y/o publicitaria.</p>
+      <p>Le informamos de que todos ellos están protegidos con las seguridades necesarias y de que serán conservados exclusivamente hasta la finalización de la relación comercial o laboral. Este tratamiento se basa en nuestro interés legítimo en comunicarnos con usted, en cumplimiento y/o mantenimiento de relaciones comerciales o laborales.</p>
+      <p>Le informamos de que no compartiremos sus datos personales facilitados por usted.</p>
+      <p>Recuerde que tiene una serie de derechos en relación con el uso de sus datos personales. Le garantizamos el ejercicio del derecho de acceso, rectificación, supresión, oposición, limitación, portabilidad y oposición a la toma de decisiones.</p>
+      <p>A fin de que sus datos sean un fiel reflejo de la realidad, no dude en hacer uso de su derecho de rectificación en el caso de que estos sufran alguna modificación, cambio o anulación.</p>
+      <p>Puede ejercer todos estos derechos remitiendo un email a la dirección arriba indicada. También tiene derecho a presentar reclamaciones ante la Agencia Española de Protección de Datos y acudir a los Tribunales de Justicia.</p>
+    </div>
+  </div>
+</div>
+
+<footer id="contacto">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/letras-white.webp" alt="MATEO E HIJO" class="footer-logo">
+      <p class="footer-tagline">Desde 1979 protegiendo tus cosechas, <span class="accent-green">tejiendo tus sueños</span></p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/mateo-e-hijo-s-l-17a738368/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.5 9.5h5V22h-5zM9.5 9.5h4.8v1.7h.07c.67-1.2 2.3-2.05 4.13-2.05 3.3 0 4.5 2 4.5 5.4V22h-5v-6.2c0-1.5-.5-2.6-1.9-2.6-1.3 0-2.1.9-2.4 1.8-.1.3-.13.7-.13 1.1V22h-4.07z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/mateoehijo.sl/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+        </a>
+        <a href="https://www.facebook.com/mateoehijo/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.9l.45-3.4H13.5V8.4c0-.98.28-1.65 1.7-1.65h1.8V3.7c-.31-.04-1.38-.13-2.63-.13-2.6 0-4.37 1.58-4.37 4.5v2.53H7v3.4h3V22z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <span class="footer-heading">Contacto</span>
+      <a href="https://www.google.com/maps/search/?api=1&query=Ctra+Los+Vives+13+03315+La+Murada+Orihuela+Alicante" target="_blank" rel="noopener" class="footer-link footer-link-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <span>Ctra Los Vives, 13<br>03315 La Murada-Orihuela<br>(Alicante), España</span>
+      </a>
+      <a href="tel:+34669394826" class="footer-link footer-link-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M21 16.9v2.6a2 2 0 0 1-2.2 2 19.5 19.5 0 0 1-8.5-3 19.2 19.2 0 0 1-5.9-5.9 19.5 19.5 0 0 1-3-8.6A2 2 0 0 1 3.4 2H6a2 2 0 0 1 2 1.7c.1.9.35 1.8.7 2.7a2 2 0 0 1-.45 2.1L7.1 9.7a15.5 15.5 0 0 0 5.9 5.9l1.2-1.2a2 2 0 0 1 2.1-.45c.9.35 1.8.6 2.7.7A2 2 0 0 1 21 16.9z"></path></svg>
+        <span>+34 669 394 826</span>
+      </a>
+      <a href="https://wa.me/34682473938" target="_blank" rel="noopener" class="footer-link footer-link-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.94.53 3.75 1.45 5.3L2 22l4.98-1.6a9.8 9.8 0 0 0 5.06 1.4c5.44 0 9.84-4.4 9.84-9.84S17.48 2 12.04 2zm5.7 13.9c-.24.68-1.4 1.32-1.94 1.37-.53.05-1.02.2-3.44-.9-2.42-1.1-3.94-3.6-4.06-3.76-.12-.17-.96-1.3-.96-2.48s.62-1.76.84-2c.22-.24.48-.3.65-.3h.46c.15 0 .35-.03.53.42.2.5.66 1.7.72 1.83.06.12.1.27.02.43-.09.17-.5.68-.68.86-.12.13-.25.27-.1.53.14.26.64 1.07 1.37 1.73.94.85 1.73 1.11 1.98 1.24.25.12.4.1.55-.06.15-.17.64-.75.81-1 .18-.26.35-.21.58-.13.24.09 1.5.71 1.76.84.26.13.43.19.5.3.06.1.06.63-.18 1.31z"/></svg>
+        <span>+34 682 473 938</span>
+      </a>
+      <a href="mailto:administracion@mateoehijo.com" class="footer-link footer-link-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"></rect><path d="m3 6.5 9 6 9-6"></path></svg>
+        <span>administracion@mateoehijo.com</span>
+      </a>
+    </div>
+
+    <div class="footer-col" id="footerProductos">
+      <span class="footer-heading">Productos</span>
+    </div>
+
+    <div class="footer-col-group">
+      <div class="footer-col">
+        <span class="footer-heading">Empresa</span>
+        <a href="#empresa" class="footer-link">Historia</a>
+        <a href="#empresa" class="footer-link">Equipo</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading">Colabora</span>
+        <a href="#formulario" class="footer-link" data-asunto="Solicitar presupuesto">Solicitar presupuesto</a>
+        <a href="#formulario" class="footer-link" data-asunto="Conviértete en distribuidor">Conviértete en distribuidor</a>
+        <a href="#formulario" class="footer-link" data-asunto="Trabaja con nosotros">Trabaja con nosotros</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Mateo e Hijo S.L.</span>
+    <div class="footer-bottom-links">
+      <a href="#contacto">Aviso legal</a>
+      <a href="#" id="openPrivacy2">Privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
