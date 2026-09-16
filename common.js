@@ -3,6 +3,10 @@
 // the privacy modal. Requires products-data.js to be loaded first.
 (function () {
   const PRODUCTS = window.MEH_PRODUCTS || [];
+  // MEH_PRODUCTS hrefs are written relative to the project root (e.g.
+  // "productos/productos.html#riego"). Pages that live in a subfolder
+  // declare how far back to root via <body data-base="../">.
+  const BASE = document.body.dataset.base || '';
 
   // --- Nav scroll state ---
   const navbar = document.getElementById('navbar');
@@ -29,15 +33,16 @@
   const productosDropdown = document.getElementById('productosDropdown');
   const footerProductos = document.getElementById('footerProductos');
   PRODUCTS.forEach((item) => {
+    const href = BASE + item.href;
     if (productosDropdown) {
       const a1 = document.createElement('a');
-      a1.href = item.href;
+      a1.href = href;
       a1.textContent = item.label;
       productosDropdown.appendChild(a1);
     }
     if (footerProductos) {
       const a2 = document.createElement('a');
-      a2.href = item.href;
+      a2.href = href;
       a2.className = 'footer-link';
       a2.textContent = item.label;
       footerProductos.appendChild(a2);
