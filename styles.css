@@ -35,7 +35,7 @@ a:hover { color: var(--meh-navy); }
   transition: background .3s ease, box-shadow .3s ease;
 }
 #navbar.solid { background: var(--meh-surface); box-shadow: var(--shadow-nav); }
-.nav-logo { display: flex; align-items: center; gap: 14px; }
+.nav-logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
 .nav-logo img { height: 46px; }
 .nav-logo .logo-color { display: none; }
 #navbar.solid .logo-white { display: none; }
@@ -110,16 +110,25 @@ a:hover { color: var(--meh-navy); }
   text-align: center; font-family: var(--font-display); font-weight: 700; font-size: clamp(1.8rem, 3.5vw, 2.4rem);
   color: var(--meh-navy); margin: 0 0 10px;
 }
+.products-subheading { text-align: center; color: var(--meh-gray-500); font-size: 1rem; margin: 0; }
+.products-subheading a { color: var(--meh-blue); font-weight: 600; }
+.products-subheading a:hover { color: var(--meh-navy); }
 .carousel { position: relative; max-width: 1100px; margin: 40px auto 0; padding: 0 60px; }
 .carousel-viewport { overflow: hidden; border-radius: var(--radius-md); }
 .carousel-track { display: flex; transition: transform .5s ease; }
 .carousel-slide { flex: 0 0 100%; position: relative; }
+.carousel-slide-link { display: block; position: relative; }
 .carousel-slide img { width: 100%; height: 460px; object-fit: cover; display: block; }
 .carousel-caption {
   position: absolute; left: 0; right: 0; bottom: 0; padding: 24px 32px;
   background: linear-gradient(0deg, rgba(49,70,109,.85), rgba(49,70,109,0));
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
 }
 .carousel-caption span { color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; }
+.carousel-caption::after {
+  content: 'Ver más ›'; color: #fff; font-family: var(--font-display); font-weight: 600;
+  font-size: .85rem; opacity: .85; white-space: nowrap;
+}
 .carousel-btn {
   position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px;
   border-radius: 50%; border: none; background: #fff; box-shadow: var(--shadow-card);

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos y servicios — Mateo e Hijo</title>
+<meta name="description" content="Invernaderos multicapilla, parral, túnel y multitúnel, WALIA, malla antihierba, riego, cubrimientos de pantano, cercados, proyectos llave en mano y mantenimientos agrícolas. Mateo e Hijo, desde 1979.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="productos.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo-rect-white.webp" alt="Mateo e Hijo" class="logo-white">
+    <img src="assets/logo.png" alt="Mateo e Hijo" class="logo-color">
+  </a>
+  <button id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="navMenu">
+    <li class="has-dropdown">
+      <a href="index.html#empresa">Empresa</a>
+      <div class="dropdown">
+        <a href="index.html#empresa">Historia</a>
+        <a href="index.html#empresa">Equipo</a>
+      </div>
+    </li>
+    <li class="has-dropdown">
+      <a href="productos.html">Productos</a>
+      <div class="dropdown" id="productosDropdown"></div>
+    </li>
+    <li><a href="walia/walia.html">WALIA</a></li>
+    <li class="has-dropdown">
+      <a href="index.html#formulario">Contacto</a>
+      <div class="dropdown">
+        <a href="index.html?asunto=Solicitar%20presupuesto#formulario">Solicitar presupuesto</a>
+        <a href="index.html?asunto=Conviértete%20en%20distribuidor#formulario">Conviértete en distribuidor</a>
+        <a href="index.html?asunto=Trabaja%20con%20nosotros#formulario">Trabaja con nosotros</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<header class="prod-hero">
+  <img src="assets/hero.jpg" alt="Invernadero Mateo e Hijo" class="prod-hero-img">
+  <div class="prod-hero-scrim"></div>
+  <div class="prod-hero-content">
+    <span class="prod-breadcrumb"><a href="index.html">Mateo e Hijo</a> / Productos y servicios</span>
+    <h1>Productos y servicios</h1>
+    <p>Proyectos llave e mano.</p>
+  </div>
+</header>
+
+<nav class="prod-quicknav" id="prodQuicknav" aria-label="Ir a un producto"></nav>
+
+<section id="invernaderos-tradicionales" class="prod-panel" data-label="Invernaderos tradicionales">
+  <div class="prod-panel-inner">
+    <div class="prod-panel-media">
+      <img src="assets/cat-invernaderos-tradicionales.jpg" alt="Invernaderos tradicionales Mateo e Hijo">
+    </div>
+    <div class="prod-panel-body">
+      <span class="prod-eyebrow">Invernaderos</span>
+      <h2>Invernaderos tradicionales</h2>
+      <p class="prod-lead">Diseñamos y construimos invernaderos adaptados a cada cultivo, terreno y clima. Nuestro equipo técnico te asesora en la elección de la estructura más adecuada para tu explotación, desde modelos multicapilla y parral hasta pequeños invernaderos de jardín.</p>
+      <a href="index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+    </div>
+  </div>
+
+  <div class="prod-subgrid">
+    <div class="prod-subcard">
+      <h3>Multicapilla</h3>
+      <p>Techo a dos aguas y estructura de cables de acero que minimiza la necesidad de pilares centrales, optimizando el espacio y facilitando el acceso de maquinaria agrícola. Ideal para cítricos, uva de mesa y kiwi.</p>
+      <div class="prod-subcard-when"><b>Cuándo escogerlo:</b> apto para todo tipo de clima; con refuerzos adicionales, también en zonas frías con carga de nieve.</div>
+    </div>
+    <div class="prod-subcard">
+      <h3>Parral</h3>
+      <p>Estructura flexible de alambres y trenzas tensados, con cerramiento de láminas de plástico entre mallas de alambre. Los soportes se fijan al suelo mediante cimentación en acero galvanizado.</p>
+      <div class="prod-subcard-when"><b>Cuándo escogerlo:</b> ideal en climas cálidos, para tomates, pimientos, judías y otras plantas trepadoras.</div>
+    </div>
+    <div class="prod-subcard">
+      <h3>Parral plano</h3>
+      <p>Techo esencialmente plano o ligeramente inclinado que maximiza el aprovechamiento del espacio, especialmente indicado para cultivos en espaldera como la vid.</p>
+      <div class="prod-subcard-when"><b>Cuándo escogerlo:</b> cultivos en espaldera y zonas con viento fuerte, granizo o lluvias intensas.</div>
+    </div>
+    <div class="prod-subcard">
+      <h3>Jardín</h3>
+      <p>Diseño compacto y estético pensado para huertos y jardines domésticos, con techo inclinado a dos aguas para un buen drenaje y entrada de luz solar.</p>
+      <div class="prod-subcard-when"><b>Cuándo escogerlo:</b> huertos pequeños y plantas ornamentales, en climas fríos o templados.</div>
+    </div>
+  </div>
+</section>
+
+<section id="walia" class="prod-panel" data-label="Invernaderos inteligentes (WALIA)">
+  <div class="prod-panel-inner">
+    <div class="prod-panel-media">
+      <img src="assets/PHOTO-2026-09-14-20-17-58.jpg" alt="WALIA, invernadero inteligente">
+    </div>
+    <div class="prod-panel-body">
+      <span class="prod-eyebrow">Innovación y tecnología</span>
+      <h2>Invernaderos inteligentes WALIA</h2>
+      <p class="prod-lead">WALIA dota de inteligencia a tus invernaderos multiparral y multicapilla: sensores, motores y conexiones que abren y cierran los plásticos automáticamente e informan en tiempo real del clima en tu finca, con opción de placas solares para funcionar de forma autosostenible.</p>
+      <ul class="prod-list">
+        <li>Temperatura, humedad y precipitaciones en tiempo real</li>
+        <li>Viento y radiación solar desde la app</li>
+        <li>Recomendaciones inteligentes para maximizar la producción</li>
+      </ul>
+      <a href="walia/walia.html" class="btn btn-green prod-cta-btn">Descubre WALIA en detalle</a>
+      <img src="assets/5b1cc72c-7603-4e79-8efb-26116e3a7654.png" alt="" class="prod-walia-illustration">
+    </div>
+  </div>
+</section>
+
+<section id="tunel-multitunel" class="prod-panel" data-label="Invernaderos túnel y multitúnel">
+  <div class="prod-panel-inner">
+    <div class="prod-panel-media">
+      <img src="assets/cat-tunel.jpg" alt="Invernaderos túnel y multitúnel">
+    </div>
+    <div class="prod-panel-body">
+      <span class="prod-eyebrow">Invernaderos</span>
+      <h2>Invernaderos túnel y multitúnel</h2>
+      <p class="prod-lead">Estructuras curvas prefabricadas pensadas para instalaciones rápidas y económicas, desde pequeñas superficies hasta explotaciones tecnificadas de gran tamaño.</p>
+      <a href="index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+    </div>
+  </div>
+
+  <div class="prod-subgrid">
+    <div class="prod-subcard">
+      <h3>Túnel</h3>
+      <p>Estructura totalmente curva desde el suelo hasta la cumbrera, formada por arcos de tubo galvanizado que no precisan zapatas de hormigón, lo que facilita su traslado e instalación.</p>
+      <div class="prod-subcard-when"><b>Cuándo escogerlo:</b> superficies y cultivos pequeños, hortícolas de porte rastrero o entutorados a baja altura.</div>
+    </div>
+    <div class="prod-subcard">
+      <h3>Multitúnel</h3>
+      <p>Invernadero industrial de estructura totalmente metálica y cubierta curva, con cerramiento de malla mosquitera y láminas de EVA sujetas mediante perfiles de acero galvanizado.</p>
+      <div class="prod-subcard-when"><b>Cuándo escogerlo:</b> explotaciones tecnificadas que necesitan control climático avanzado y automatización.</div>
+    </div>
+  </div>
+</section>
+
+<section id="riego" class="prod-panel" data-label="Instalaciones de riego">
+  <div class="prod-panel-inner">
+    <div class="prod-panel-media">
+      <img src="assets/cat-riego.jpg" alt="Instalaciones de riego">
+    </div>
+    <div class="prod-panel-body">
+      <span class="prod-eyebrow">Servicios e instalaciones</span>
+      <h2>Instalaciones de riego</h2>
+      <p class="prod-lead">Diseñamos e instalamos sistemas de riego adaptados a cada cultivo e invernadero, integrables con la automatización del clima para un control preciso del agua y un mejor aprovechamiento de los recursos.</p>
+      <ul class="prod-list">
+        <li>Automatización completa junto con el control climático del invernadero</li>
+        <li>Ahorro de agua y de mano de obra</li>
+        <li>Asesoramiento técnico personalizado de principio a fin</li>
+      </ul>
+      <a href="index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+    </div>
+  </div>
+</section>
+
+<section id="pantano" class="prod-panel" data-label="Cubrimientos de pantano">
+  <div class="prod-panel-inner">
+    <div class="prod-panel-media">
+      <img src="assets/cat-pantano.jpg" alt="Cubrimientos de pantano">
+    </div>
+    <div class="prod-panel-body">
+      <span class="prod-eyebrow">Servicios e instalaciones</span>
+      <h2>Cubrimientos de pantano</h2>
+      <p class="prod-lead">Cubrimos balsas y pantanos de riego para proteger el agua acumulada de la evaporación, la suciedad y la proliferación de algas, alargando la vida útil del agua y de toda la instalación de riego.</p>
+      <ul class="prod-list">
+        <li>Reduce la evaporación y las pérdidas de agua</li>
+        <li>Protege la instalación de riego de suciedad y algas</li>
+        <li>Materiales resistentes a la intemperie</li>
+      </ul>
+      <a href="index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+    </div>
+  </div>
+</section>
+
+<section id="malla-antihierba" class="prod-panel" data-label="Malla antihierba">
+  <div class="prod-panel-inner">
+    <div class="prod-panel-media">
+      <img src="assets/cat-malla-antihierba.jpg" alt="Malla antihierba">
+    </div>
+    <div class="prod-panel-body">
+      <span class="prod-eyebrow">Servicios e instalaciones</span>
+      <h2>Malla antihierba</h2>
+      <p class="prod-lead">Tela cubresuelos que impide el crecimiento de malas hierbas bajo el cultivo, reduciendo el uso de herbicidas y las labores de mantenimiento. Disponible en distintos gramajes y colores según la necesidad de cada finca.</p>
+      <ul class="prod-list">
+        <li>Reduce el mantenimiento y el uso de herbicidas</li>
+        <li>Ayuda a conservar la humedad del suelo</li>
+        <li>Fácil de instalar y de larga duración</li>
+      </ul>
+      <a href="index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+    </div>
+  </div>
+</section>
+
+<section id="cercados" class="prod-panel" data-label="Cercados">
+  <div class="prod-panel-inner">
+    <div class="prod-panel-media">
+      <img src="assets/cat-cercados.jpg" alt="Cercados">
+    </div>
+    <div class="prod-panel-body">
+      <span class="prod-eyebrow">Servicios e instalaciones</span>
+      <h2>Cercados</h2>
+      <p class="prod-lead">Ejecutamos cercados y vallados para delimitar y proteger tu finca: desde cercados con muro de hormigón hasta mallas simple torsión o anudada ganadera, con puertas, tensores y accesorios a medida.</p>
+      <ul class="prod-list">
+        <li>Materiales galvanizados de alta durabilidad</li>
+        <li>Diseño adaptado al uso: ganadero, perimetral o de seguridad</li>
+        <li>Instalación con maquinaria y transporte propios</li>
+      </ul>
+      <a href="index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+    </div>
+  </div>
+</section>
+
+<section id="llave-en-mano" class="prod-panel" data-label="Proyectos llave en mano">
+  <div class="prod-panel-inner">
+    <div class="prod-panel-media">
+      <img src="assets/cat-llave-en-mano.jpg" alt="Proyectos llave en mano">
+    </div>
+    <div class="prod-panel-body">
+      <span class="prod-eyebrow">Servicios e instalaciones</span>
+      <h2>Proyectos llave en mano</h2>
+      <p class="prod-lead">Nos encargamos de tu proyecto de principio a fin: asesoramiento técnico personalizado, maquinaria y transporte propio, y ejecución completa de la obra, para que tú solo tengas que preocuparte de tu cosecha.</p>
+      <ul class="prod-list">
+        <li>Un único interlocutor durante todo el proyecto</li>
+        <li>Maquinaria de última generación y transporte propio</li>
+        <li>Materiales respaldados por certificaciones anuales de calidad</li>
+      </ul>
+      <a href="index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+    </div>
+  </div>
+</section>
+
+<section id="mantenimientos" class="prod-panel" data-label="Mantenimientos agrícolas">
+  <div class="prod-panel-inner">
+    <div class="prod-panel-media">
+      <img src="assets/cat-mantenimientos.jpg" alt="Mantenimientos agrícolas">
+    </div>
+    <div class="prod-panel-body">
+      <span class="prod-eyebrow">Servicios e instalaciones</span>
+      <h2>Mantenimientos agrícolas</h2>
+      <p class="prod-lead">Nos encargamos del mantenimiento y desarrollo de tus plantaciones, garantizando resultados óptimos y liberándote de preocupaciones, con maquinaria innovadora y técnicas avanzadas.</p>
+      <ul class="prod-list">
+        <li>Injerto y poda</li>
+        <li>Maquinaria y tractor propios</li>
+        <li>Transporte con camión grúa</li>
+      </ul>
+      <a href="index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+    </div>
+  </div>
+</section>
+
+<section class="prod-final-cta">
+  <img src="assets/walia-teaser.jpg" alt="Mateo e Hijo" class="prod-final-cta-img">
+  <div class="prod-final-cta-scrim"></div>
+  <div class="prod-final-cta-card">
+    <span class="badge badge-green">Desde 1979</span>
+    <h2>¿Necesitas asesoramiento para tu proyecto?</h2>
+    <p>Cuéntanos qué necesitas y nuestro equipo técnico te ayuda a elegir la solución más adecuada para tu finca.</p>
+    <a href="index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-green">Solicitar presupuesto</a>
+    <a href="index.html" class="btn btn-primary">Volver al inicio</a>
+  </div>
+</section>
+
+<div id="privacyModal" class="modal-overlay" hidden>
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2>Política de Privacidad</h2>
+      <button id="closePrivacy" aria-label="Cerrar">×</button>
+    </div>
+    <div class="modal-body">
+      <p>En cumplimiento del Reglamento (UE) 2016/679 y de la Ley Orgánica de Protección de Datos de Carácter Personal, le informamos de que la identidad del responsable que trata sus datos es:</p>
+      <p class="modal-bold">MANTENIMIENTOS Y ESTRUCT. AGRÍCOLAS MATEO E HIJO, S.L.U.<br>CIF: B42531897<br>Ctra Los Vives, 13 · 03315 Orihuela (Alicante)<br><a href="mailto:administracion@mateoehijo.com">administracion@mateoehijo.com</a></p>
+      <p>Los datos personales que tratamos en nuestra organización son los mínimos necesarios para contactar con usted, con la finalidad de enviarle información, incluida, en su caso, la comercial y/o publicitaria.</p>
+      <p>Le informamos de que todos ellos están protegidos con las seguridades necesarias y de que serán conservados exclusivamente hasta la finalización de la relación comercial o laboral. Este tratamiento se basa en nuestro interés legítimo en comunicarnos con usted, en cumplimiento y/o mantenimiento de relaciones comerciales o laborales.</p>
+      <p>Le informamos de que no compartiremos sus datos personales facilitados por usted.</p>
+      <p>Recuerde que tiene una serie de derechos en relación con el uso de sus datos personales. Le garantizamos el ejercicio del derecho de acceso, rectificación, supresión, oposición, limitación, portabilidad y oposición a la toma de decisiones.</p>
+      <p>A fin de que sus datos sean un fiel reflejo de la realidad, no dude en hacer uso de su derecho de rectificación en el caso de que estos sufran alguna modificación, cambio o anulación.</p>
+      <p>Puede ejercer todos estos derechos remitiendo un email a la dirección arriba indicada. También tiene derecho a presentar reclamaciones ante la Agencia Española de Protección de Datos y acudir a los Tribunales de Justicia.</p>
+    </div>
+  </div>
+</div>
+
+<footer id="contacto">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/letras-white.webp" alt="MATEO E HIJO" class="footer-logo">
+      <p class="footer-tagline">Desde 1979 protegiendo tus cosechas, <span class="accent-green">tejiendo tus sueños</span></p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/mateo-e-hijo-s-l-17a738368/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.5 9.5h5V22h-5zM9.5 9.5h4.8v1.7h.07c.67-1.2 2.3-2.05 4.13-2.05 3.3 0 4.5 2 4.5 5.4V22h-5v-6.2c0-1.5-.5-2.6-1.9-2.6-1.3 0-2.1.9-2.4 1.8-.1.3-.13.7-.13 1.1V22h-4.07z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/mateoehijo.sl/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+        </a>
+        <a href="https://www.facebook.com/mateoehijo/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.9l.45-3.4H13.5V8.4c0-.98.28-1.65 1.7-1.65h1.8V3.7c-.31-.04-1.38-.13-2.63-.13-2.6 0-4.37 1.58-4.37 4.5v2.53H7v3.4h3V22z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <span class="footer-heading">Contacto</span>
+      <a href="https://www.google.com/maps/search/?api=1&query=Ctra+Los+Vives+13+03315+La+Murada+Orihuela+Alicante" target="_blank" rel="noopener" class="footer-link footer-link-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <span>Ctra Los Vives, 13<br>03315 La Murada-Orihuela<br>(Alicante), España</span>
+      </a>
+      <a href="tel:+34669394826" class="footer-link footer-link-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M21 16.9v2.6a2 2 0 0 1-2.2 2 19.5 19.5 0 0 1-8.5-3 19.2 19.2 0 0 1-5.9-5.9 19.5 19.5 0 0 1-3-8.6A2 2 0 0 1 3.4 2H6a2 2 0 0 1 2 1.7c.1.9.35 1.8.7 2.7a2 2 0 0 1-.45 2.1L7.1 9.7a15.5 15.5 0 0 0 5.9 5.9l1.2-1.2a2 2 0 0 1 2.1-.45c.9.35 1.8.6 2.7.7A2 2 0 0 1 21 16.9z"></path></svg>
+        <span>+34 669 394 826</span>
+      </a>
+      <a href="https://wa.me/34682473938" target="_blank" rel="noopener" class="footer-link footer-link-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.94.53 3.75 1.45 5.3L2 22l4.98-1.6a9.8 9.8 0 0 0 5.06 1.4c5.44 0 9.84-4.4 9.84-9.84S17.48 2 12.04 2zm5.7 13.9c-.24.68-1.4 1.32-1.94 1.37-.53.05-1.02.2-3.44-.9-2.42-1.1-3.94-3.6-4.06-3.76-.12-.17-.96-1.3-.96-2.48s.62-1.76.84-2c.22-.24.48-.3.65-.3h.46c.15 0 .35-.03.53.42.2.5.66 1.7.72 1.83.06.12.1.27.02.43-.09.17-.5.68-.68.86-.12.13-.25.27-.1.53.14.26.64 1.07 1.37 1.73.94.85 1.73 1.11 1.98 1.24.25.12.4.1.55-.06.15-.17.64-.75.81-1 .18-.26.35-.21.58-.13.24.09 1.5.71 1.76.84.26.13.43.19.5.3.06.1.06.63-.18 1.31z"/></svg>
+        <span>+34 682 473 938</span>
+      </a>
+      <a href="mailto:administracion@mateoehijo.com" class="footer-link footer-link-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"></rect><path d="m3 6.5 9 6 9-6"></path></svg>
+        <span>administracion@mateoehijo.com</span>
+      </a>
+    </div>
+
+    <div class="footer-col" id="footerProductos">
+      <span class="footer-heading">Productos</span>
+    </div>
+
+    <div class="footer-col-group">
+      <div class="footer-col">
+        <span class="footer-heading">Empresa</span>
+        <a href="index.html#empresa" class="footer-link">Historia</a>
+        <a href="index.html#empresa" class="footer-link">Equipo</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading">Colabora</span>
+        <a href="index.html?asunto=Solicitar%20presupuesto#formulario" class="footer-link">Solicitar presupuesto</a>
+        <a href="index.html?asunto=Conviértete%20en%20distribuidor#formulario" class="footer-link">Conviértete en distribuidor</a>
+        <a href="index.html?asunto=Trabaja%20con%20nosotros#formulario" class="footer-link">Trabaja con nosotros</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Mateo e Hijo S.L.</span>
+    <div class="footer-bottom-links">
+      <a href="index.html#contacto">Aviso legal</a>
+      <a href="#" id="openPrivacy2">Privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script src="products-data.js"></script>
+<script src="common.js"></script>
+<script src="productos.js"></script>
+</body>
+</html>
