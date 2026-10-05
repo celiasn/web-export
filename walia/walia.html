@@ -9,32 +9,35 @@
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="walia.css">
 </head>
-<body class="walia-page">
+<body class="walia-page" data-base="../" data-i18n-title="walia.title" data-i18n-description="walia.description">
 
 <nav id="waliaNav">
   <a href="../index.html" class="walia-nav-back">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#31466D" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"></path></svg>
     <span>Mateo e Hijo</span>
   </a>
-  <div class="walia-nav-links">
-    <a href="#producto">Producto</a>
-    <a href="#app">App</a>
-    <a href="#cultivos">Cultivos</a>
-    <a href="#contacto-walia">Contacto</a>
+  <div class="walia-nav-right">
+    <div class="walia-nav-links">
+      <a href="#producto" data-i18n="walia.navProducto"></a>
+      <a href="#app" data-i18n="walia.navApp"></a>
+      <a href="#cultivos" data-i18n="walia.navCultivos"></a>
+      <a href="#contacto-walia" data-i18n="nav.contacto"></a>
+    </div>
+    <div class="lang-switcher" id="langSwitcher"></div>
   </div>
 </nav>
 
 <header class="walia-hero">
   <div class="walia-hero-banner">
-    <img class="walia-hero-photo" src="../assets/PHOTO-2026-09-14-20-17-58.jpg" alt="Invernadero WALIA con plásticos retráctiles">
+    <img class="walia-hero-photo" src="../assets/PHOTO-2026-09-14-20-17-58.jpg" data-i18n-attr='{"alt":"walia.heroPhotoAlt"}' alt="Invernadero WALIA con plásticos retráctiles">
     <!-- <img class="walia-hero-logo" src="../assets/logo-walia.png" alt="WALIA by Mateo e Hijo"> -->
   </div>
   <div class="walia-hero-copy">
-    <p class="walia-hero-title">El invernadero inteligente con plásticos retráctiles</p>
-    <p class="walia-hero-sub">Monitoriza y controla tu invernadero desde el móvil. Abre y cierra los plásticos de forma automática según las condiciones climáticas.</p>
+    <p class="walia-hero-title" data-i18n="walia.heroTitle"></p>
+    <p class="walia-hero-sub" data-i18n="walia.heroSub"></p>
     <div class="walia-hero-actions">
-      <a href="#contacto-walia" class="btn walia-btn-green">Solicitar información</a>
-      <a href="#producto" class="btn walia-btn-ghost">Conoce WALIA</a>
+      <a href="#contacto-walia" class="btn walia-btn-green" data-i18n="walia.heroInfoBtn"></a>
+      <a href="#producto" class="btn walia-btn-ghost" data-i18n="walia.heroConoceBtn"></a>
     </div>
   </div>
 </header>
@@ -42,21 +45,21 @@
 <section id="producto" class="walia-section">
   <div class="walia-split">
     <div class="walia-split-copy">
-      <span class="walia-eyebrow">Invernadero inteligente</span>
-      <h2>Plásticos retráctiles controlados desde tu móvil</h2>
-      <p class="walia-lead">WALIA es un sistema de invernadero diseñado para todo tipo de cultivos. Sus plásticos agrícolas se abren y cierran de forma automática o manual mediante una aplicación móvil, adaptándose a las condiciones climáticas en tiempo real.</p>
+      <span class="walia-eyebrow" data-i18n="walia.productoEyebrow"></span>
+      <h2 data-i18n="walia.productoH2"></h2>
+      <p class="walia-lead" data-i18n="walia.productoLead"></p>
       <div class="walia-feature-list">
         <div class="walia-feature">
           <div class="walia-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"></path></svg></div>
-          <div><span class="walia-feature-title">Sensores climáticos</span><p>Temperatura, humedad y precipitaciones en tiempo real.</p></div>
+          <div><span class="walia-feature-title" data-i18n="walia.featSensoresTitle"></span><p data-i18n="walia.featSensoresP"></p></div>
         </div>
         <div class="walia-feature">
           <div class="walia-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><path d="M12 18h.01"></path></svg></div>
-          <div><span class="walia-feature-title">Control remoto</span><p>Abre y cierra los plásticos desde tu teléfono, estés donde estés.</p></div>
+          <div><span class="walia-feature-title" data-i18n="walia.featControlTitle"></span><p data-i18n="walia.featControlP"></p></div>
         </div>
         <div class="walia-feature">
           <div class="walia-feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10z"></path><path d="M12 6v6l4 2"></path></svg></div>
-          <div><span class="walia-feature-title">Automatización</span><p>Respuesta automática a cambios en las condiciones meteorológicas.</p></div>
+          <div><span class="walia-feature-title" data-i18n="walia.featAutoTitle"></span><p data-i18n="walia.featAutoP"></p></div>
         </div>
       </div>
     </div>
@@ -72,25 +75,25 @@
       <img src="../assets/walia-app.png" alt="App WALIA">
     </div>
     <div class="walia-split-copy">
-      <span class="walia-eyebrow">App WALIA</span>
-      <h2>Tu invernadero en la palma de la mano</h2>
-      <p class="walia-lead">La aplicación WALIA te permite monitorizar en tiempo real los datos de tu invernadero y controlar el estado de los plásticos retráctiles desde cualquier lugar.</p>
+      <span class="walia-eyebrow" data-i18n="walia.appEyebrow"></span>
+      <h2 data-i18n="walia.appH2"></h2>
+      <p class="walia-lead" data-i18n="walia.appLead"></p>
       <div class="walia-data-grid">
         <div class="walia-data-tile">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path></svg>
-          <span>Temperatura</span>
+          <span data-i18n="walia.dataTemp"></span>
         </div>
         <div class="walia-data-tile">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
-          <span>Humedad</span>
+          <span data-i18n="walia.dataHum"></span>
         </div>
         <div class="walia-data-tile">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"></path><path d="M16 14l-4 4-4-4"></path></svg>
-          <span>Precipitaciones</span>
+          <span data-i18n="walia.dataRain"></span>
         </div>
         <div class="walia-data-tile">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M5 3v16h16"></path><path d="M8 14l3-3 4 4 5-5"></path></svg>
-          <span>Histórico</span>
+          <span data-i18n="walia.dataHist"></span>
         </div>
       </div>
     </div>
@@ -98,46 +101,46 @@
 </section>
 
 <section id="cultivos" class="walia-section walia-cultivos">
-  <span class="walia-eyebrow walia-center">Cultivos compatibles</span>
-  <h2 class="walia-center">Diseñado para todo tipo de invernaderos</h2>
-  <p class="walia-lead walia-center walia-cultivos-lead">WALIA protege y optimiza la producción de los principales cultivos.</p>
+  <span class="walia-eyebrow walia-center" data-i18n="walia.cultivosEyebrow"></span>
+  <h2 class="walia-center" data-i18n="walia.cultivosH2"></h2>
+  <p class="walia-lead walia-center walia-cultivos-lead" data-i18n="walia.cultivosLead"></p>
   <div class="walia-chips" id="waliaCultivos"></div>
 </section>
 
 <section class="walia-cta">
   <span class="badge badge-green">Fruit Attraction 2026</span>
-  <h2>Visítanos en IFEMA Madrid</h2>
-  <p>Descubre WALIA en persona. Solicita tu cita y te mostramos cómo funciona el invernadero inteligente.</p>
-  <a href="#contacto-walia" class="btn walia-btn-lime">Solicitar cita</a>
+  <h2 data-i18n="walia.ctaH2"></h2>
+  <p data-i18n="walia.ctaP"></p>
+  <a href="#contacto-walia" class="btn walia-btn-lime" data-i18n="walia.ctaBtn"></a>
 </section>
 
 <section id="contacto-walia" class="walia-section walia-contact">
   <div class="walia-contact-intro">
-    <span class="walia-eyebrow walia-center">Contacto WALIA</span>
-    <h2 class="walia-center">¿Quieres saber más?</h2>
-    <p class="walia-lead walia-center">Escríbenos y te informamos sin compromiso sobre WALIA y cómo puede ayudarte en tu explotación.</p>
+    <span class="walia-eyebrow walia-center" data-i18n="walia.contactEyebrow"></span>
+    <h2 class="walia-center" data-i18n="walia.contactH2"></h2>
+    <p class="walia-lead walia-center" data-i18n="walia.contactLead"></p>
   </div>
   <form id="waliaForm" class="walia-form">
     <div class="field">
-      <label for="w-nombre">Nombre completo</label>
-      <input type="text" id="w-nombre" placeholder="Tu nombre" required>
+      <label for="w-nombre" data-i18n="form.nombreLabel"></label>
+      <input type="text" id="w-nombre" data-i18n-attr='{"placeholder":"form.nombrePlaceholder"}' placeholder="Tu nombre" required>
     </div>
     <div class="field-row">
       <div class="field">
-        <label for="w-email">Email</label>
+        <label for="w-email" data-i18n="form.emailLabel"></label>
         <input type="email" id="w-email" placeholder="tu@email.com" required>
       </div>
       <div class="field">
-        <label for="w-telefono">Teléfono</label>
+        <label for="w-telefono" data-i18n="form.telefonoLabel"></label>
         <input type="tel" id="w-telefono" placeholder="+34 600 000 000">
       </div>
     </div>
     <div class="field">
-      <label for="w-mensaje">Mensaje</label>
-      <textarea id="w-mensaje" rows="4" placeholder="¿En qué cultivo estás interesado? ¿Cuántas hectáreas?"></textarea>
+      <label for="w-mensaje" data-i18n="walia.mensajeLabel"></label>
+      <textarea id="w-mensaje" rows="4" data-i18n-attr='{"placeholder":"walia.mensajePlaceholder"}' placeholder="¿En qué cultivo estás interesado? ¿Cuántas hectáreas?"></textarea>
     </div>
-    <button type="submit" class="btn walia-btn-green">Enviar consulta</button>
-    <p id="waliaSentMsg" class="form-sent-msg" hidden>✓ Se ha abierto tu cliente de correo. ¡Gracias!</p>
+    <button type="submit" class="btn walia-btn-green" data-i18n="walia.submitBtn"></button>
+    <p id="waliaSentMsg" class="form-sent-msg" data-i18n="walia.sentMsg" hidden></p>
   </form>
 </section>
 
@@ -157,6 +160,8 @@
   </div>
 </footer>
 
+<script src="../products-data.js"></script>
+<script src="../i18n.js"></script>
 <script src="walia.js"></script>
 </body>
 </html>

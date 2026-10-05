@@ -9,14 +9,17 @@
   const quicknav = document.getElementById('prodQuicknav');
   if (!panels.length || !quicknav) return;
 
+  const PRODUCTS = window.MEH_PRODUCTS || [];
   panels.forEach((panel) => {
     const chip = document.createElement('a');
     chip.className = 'prod-chip';
     chip.href = `#s-${panel.id}`;
-    chip.textContent = panel.dataset.label || panel.id;
+    const product = PRODUCTS.find((p) => p.slug === panel.id);
+    chip.dataset.i18n = product ? product.labelKey : '';
     chip.dataset.target = panel.id;
     quicknav.appendChild(chip);
   });
+  if (window.MEH_I18N) window.MEH_I18N.applyTranslations();
   const chips = Array.from(quicknav.querySelectorAll('.prod-chip'));
 
   function slugFromHash() {

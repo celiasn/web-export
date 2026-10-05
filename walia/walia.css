@@ -8,9 +8,12 @@
 }
 .walia-nav-back { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .walia-nav-back span { font-family: var(--font-display); font-weight: 600; font-size: .85rem; color: #31466D; }
-.walia-nav-links { display: flex; gap: 28px; }
+.walia-nav-links { display: flex; gap: 28px; align-items: center; }
 .walia-nav-links a { font-family: var(--font-display); font-weight: 600; font-size: .9rem; color: #31466D; text-decoration: none; }
 .walia-nav-links a:hover { color: #00A9E0; }
+.walia-nav-right { display: flex; align-items: center; gap: 20px; }
+#waliaNav .lang-option { color: #31466D; }
+#waliaNav .lang-option.active { background: rgba(49,70,109,.1); border-color: rgba(49,70,109,.3); }
 
 /* hero */
 .walia-hero { padding-top: 68px; }

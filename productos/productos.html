@@ -9,246 +9,250 @@
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="productos.css">
 </head>
-<body data-base="../">
+<body data-base="../" data-i18n-title="productos.title" data-i18n-description="productos.description">
 
 <nav id="navbar">
   <a href="../index.html" class="nav-logo">
     <img src="../assets/logo-rect-white.webp" alt="Mateo e Hijo" class="logo-white">
     <img src="../assets/logo.png" alt="Mateo e Hijo" class="logo-color">
   </a>
-  <button id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
+  <div class="nav-mobile-controls">
+    <div class="lang-switcher" id="langSwitcherMobile"></div>
+    <button id="navToggle" data-i18n-attr='{"aria-label":"nav.toggleAria"}' aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
   <ul id="navMenu">
     <li class="has-dropdown">
-      <a href="../empresa/empresa.html">Empresa</a>
+      <a href="../empresa/empresa.html" data-i18n="nav.empresa"></a>
       <div class="dropdown">
-        <a href="../empresa/empresa.html#historia">Historia</a>
-        <a href="../empresa/empresa.html#equipo">Equipo</a>
+        <a href="../empresa/empresa.html#historia" data-i18n="nav.historia"></a>
+        <a href="../empresa/empresa.html#equipo" data-i18n="nav.equipo"></a>
       </div>
     </li>
     <li class="has-dropdown">
-      <a href="productos.html">Productos</a>
+      <a href="productos.html" data-i18n="nav.productos"></a>
       <div class="dropdown" id="productosDropdown"></div>
     </li>
-    <li><a href="../walia/walia.html">WALIA</a></li>
+    <li><a href="../walia/walia.html" data-i18n="nav.walia"></a></li>
     <li class="has-dropdown">
-      <a href="../index.html#formulario">Contacto</a>
+      <a href="../index.html#formulario" data-i18n="nav.contacto"></a>
       <div class="dropdown">
-        <a href="../index.html?asunto=Solicitar%20presupuesto#formulario">Solicitar presupuesto</a>
-        <a href="../index.html?asunto=Conviértete%20en%20distribuidor#formulario">Conviértete en distribuidor</a>
-        <a href="../index.html?asunto=Trabaja%20con%20nosotros#formulario">Trabaja con nosotros</a>
+        <a href="../index.html?asunto=presupuesto#formulario" data-i18n="nav.presupuesto"></a>
+        <a href="../index.html?asunto=distribuidor#formulario" data-i18n="nav.distribuidor"></a>
+        <a href="../index.html?asunto=trabaja#formulario" data-i18n="nav.trabaja"></a>
       </div>
     </li>
+    <li class="lang-switcher-item"><div class="lang-switcher" id="langSwitcher"></div></li>
   </ul>
 </nav>
 
 <header class="prod-hero">
-  <img src="../assets/hero.jpg" alt="Invernadero Mateo e Hijo" class="prod-hero-img">
+  <img src="../assets/hero.jpg" data-i18n-attr='{"alt":"home.heroImgAlt"}' alt="Invernadero Mateo e Hijo" class="prod-hero-img">
   <div class="prod-hero-scrim"></div>
   <div class="prod-hero-content">
-    <span class="prod-breadcrumb"><a href="../index.html">Mateo e Hijo</a> / Productos y servicios</span>
-    <h1>Productos y servicios</h1>
-    <p>Proyectos llave e mano.</p>
+    <span class="prod-breadcrumb" data-i18n-html="productos.breadcrumb"><a href="../index.html">Mateo e Hijo</a> / Productos y servicios</span>
+    <h1 data-i18n="productos.heroH1"></h1>
+    <p data-i18n="productos.heroP"></p>
   </div>
 </header>
 
 <nav class="prod-quicknav" id="prodQuicknav" aria-label="Ir a un producto"></nav>
 
-<section id="invernaderos-tradicionales" class="prod-panel" data-label="Invernaderos tradicionales">
+<section id="invernaderos-tradicionales" class="prod-panel">
   <div class="prod-panel-inner">
     <div class="prod-panel-media">
-      <img src="../assets/cat-invernaderos-tradicionales.jpg" alt="Invernaderos tradicionales Mateo e Hijo">
+      <img src="../assets/cat-invernaderos-tradicionales.jpg" data-i18n-attr='{"alt":"productos.panels.invernaderos-tradicionales.imgAlt"}' alt="Invernaderos tradicionales Mateo e Hijo">
     </div>
     <div class="prod-panel-body">
-      <span class="prod-eyebrow">Invernaderos</span>
-      <h2>Invernaderos tradicionales</h2>
-      <p class="prod-lead">Diseñamos y construimos invernaderos adaptados a cada cultivo, terreno y clima. Nuestro equipo técnico te asesora en la elección de la estructura más adecuada para tu explotación, desde modelos multicapilla y parral hasta pequeños invernaderos de jardín.</p>
-      <a href="../index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+      <span class="prod-eyebrow" data-i18n="productos.eyebrowInvernaderos"></span>
+      <h2 data-i18n="productos.panels.invernaderos-tradicionales.title"></h2>
+      <p class="prod-lead" data-i18n="productos.panels.invernaderos-tradicionales.lead"></p>
+      <a href="../index.html?asunto=presupuesto#formulario" class="btn btn-navy prod-cta-btn" data-i18n="nav.presupuesto"></a>
     </div>
   </div>
 
   <div class="prod-subgrid">
     <div class="prod-subcard">
-      <h3>Multicapilla</h3>
-      <p>Techo a dos aguas y estructura de cables de acero que minimiza la necesidad de pilares centrales, optimizando el espacio y facilitando el acceso de maquinaria agrícola. Ideal para cítricos, uva de mesa y kiwi.</p>
-      <div class="prod-subcard-when"><b>Cuándo escogerlo:</b> apto para todo tipo de clima; con refuerzos adicionales, también en zonas frías con carga de nieve.</div>
+      <h3 data-i18n="productos.panels.invernaderos-tradicionales.sub1Title"></h3>
+      <p data-i18n="productos.panels.invernaderos-tradicionales.sub1Body"></p>
+      <div class="prod-subcard-when"><b data-i18n="productos.cuandoEscogerlo"></b> <span data-i18n="productos.panels.invernaderos-tradicionales.sub1When"></span></div>
     </div>
     <div class="prod-subcard">
-      <h3>Parral</h3>
-      <p>Estructura flexible de alambres y trenzas tensados, con cerramiento de láminas de plástico entre mallas de alambre. Los soportes se fijan al suelo mediante cimentación en acero galvanizado.</p>
-      <div class="prod-subcard-when"><b>Cuándo escogerlo:</b> ideal en climas cálidos, para tomates, pimientos, judías y otras plantas trepadoras.</div>
+      <h3 data-i18n="productos.panels.invernaderos-tradicionales.sub2Title"></h3>
+      <p data-i18n="productos.panels.invernaderos-tradicionales.sub2Body"></p>
+      <div class="prod-subcard-when"><b data-i18n="productos.cuandoEscogerlo"></b> <span data-i18n="productos.panels.invernaderos-tradicionales.sub2When"></span></div>
     </div>
     <div class="prod-subcard">
-      <h3>Parral plano</h3>
-      <p>Techo esencialmente plano o ligeramente inclinado que maximiza el aprovechamiento del espacio, especialmente indicado para cultivos en espaldera como la vid.</p>
-      <div class="prod-subcard-when"><b>Cuándo escogerlo:</b> cultivos en espaldera y zonas con viento fuerte, granizo o lluvias intensas.</div>
+      <h3 data-i18n="productos.panels.invernaderos-tradicionales.sub3Title"></h3>
+      <p data-i18n="productos.panels.invernaderos-tradicionales.sub3Body"></p>
+      <div class="prod-subcard-when"><b data-i18n="productos.cuandoEscogerlo"></b> <span data-i18n="productos.panels.invernaderos-tradicionales.sub3When"></span></div>
     </div>
     <div class="prod-subcard">
-      <h3>Jardín</h3>
-      <p>Diseño compacto y estético pensado para huertos y jardines domésticos, con techo inclinado a dos aguas para un buen drenaje y entrada de luz solar.</p>
-      <div class="prod-subcard-when"><b>Cuándo escogerlo:</b> huertos pequeños y plantas ornamentales, en climas fríos o templados.</div>
+      <h3 data-i18n="productos.panels.invernaderos-tradicionales.sub4Title"></h3>
+      <p data-i18n="productos.panels.invernaderos-tradicionales.sub4Body"></p>
+      <div class="prod-subcard-when"><b data-i18n="productos.cuandoEscogerlo"></b> <span data-i18n="productos.panels.invernaderos-tradicionales.sub4When"></span></div>
     </div>
   </div>
 </section>
 
-<section id="walia" class="prod-panel" data-label="Invernaderos inteligentes (WALIA)">
+<section id="walia" class="prod-panel">
   <div class="prod-panel-inner">
     <div class="prod-panel-media">
-      <img src="../assets/PHOTO-2026-09-14-20-17-58.jpg" alt="WALIA, invernadero inteligente">
+      <img src="../assets/PHOTO-2026-09-14-20-17-58.jpg" data-i18n-attr='{"alt":"productos.panels.walia.imgAlt"}' alt="WALIA, invernadero inteligente">
     </div>
     <div class="prod-panel-body">
-      <span class="prod-eyebrow">Innovación y tecnología</span>
-      <h2>Invernaderos inteligentes WALIA</h2>
-      <p class="prod-lead">WALIA dota de inteligencia a tus invernaderos multiparral y multicapilla: sensores, motores y conexiones que abren y cierran los plásticos automáticamente e informan en tiempo real del clima en tu finca, con opción de placas solares para funcionar de forma autosostenible.</p>
+      <span class="prod-eyebrow" data-i18n="productos.eyebrowInnovacion"></span>
+      <h2 data-i18n="productos.panels.walia.title"></h2>
+      <p class="prod-lead" data-i18n="productos.panels.walia.lead"></p>
       <ul class="prod-list">
-        <li>Temperatura, humedad y precipitaciones en tiempo real</li>
-        <li>Viento y radiación solar desde la app</li>
-        <li>Recomendaciones inteligentes para maximizar la producción</li>
+        <li data-i18n="productos.panels.walia.list1"></li>
+        <li data-i18n="productos.panels.walia.list2"></li>
+        <li data-i18n="productos.panels.walia.list3"></li>
       </ul>
-      <a href="../walia/walia.html" class="btn btn-green prod-cta-btn">Descubre WALIA en detalle</a>
+      <a href="../walia/walia.html" class="btn btn-green prod-cta-btn" data-i18n="productos.panels.walia.ctaBtn"></a>
       <img src="../assets/5b1cc72c-7603-4e79-8efb-26116e3a7654.png" alt="" class="prod-walia-illustration">
     </div>
   </div>
 </section>
 
-<section id="tunel-multitunel" class="prod-panel" data-label="Invernaderos túnel y multitúnel">
+<section id="tunel-multitunel" class="prod-panel">
   <div class="prod-panel-inner">
     <div class="prod-panel-media">
-      <img src="../assets/cat-tunel.jpg" alt="Invernaderos túnel y multitúnel">
+      <img src="../assets/cat-tunel.jpg" data-i18n-attr='{"alt":"productos.panels.tunel-multitunel.imgAlt"}' alt="Invernaderos túnel y multitúnel">
     </div>
     <div class="prod-panel-body">
-      <span class="prod-eyebrow">Invernaderos</span>
-      <h2>Invernaderos túnel y multitúnel</h2>
-      <p class="prod-lead">Estructuras curvas prefabricadas pensadas para instalaciones rápidas y económicas, desde pequeñas superficies hasta explotaciones tecnificadas de gran tamaño.</p>
-      <a href="../index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+      <span class="prod-eyebrow" data-i18n="productos.eyebrowInvernaderos"></span>
+      <h2 data-i18n="productos.panels.tunel-multitunel.title"></h2>
+      <p class="prod-lead" data-i18n="productos.panels.tunel-multitunel.lead"></p>
+      <a href="../index.html?asunto=presupuesto#formulario" class="btn btn-navy prod-cta-btn" data-i18n="nav.presupuesto"></a>
     </div>
   </div>
 
   <div class="prod-subgrid">
     <div class="prod-subcard">
-      <h3>Túnel</h3>
-      <p>Estructura totalmente curva desde el suelo hasta la cumbrera, formada por arcos de tubo galvanizado que no precisan zapatas de hormigón, lo que facilita su traslado e instalación.</p>
-      <div class="prod-subcard-when"><b>Cuándo escogerlo:</b> superficies y cultivos pequeños, hortícolas de porte rastrero o entutorados a baja altura.</div>
+      <h3 data-i18n="productos.panels.tunel-multitunel.sub1Title"></h3>
+      <p data-i18n="productos.panels.tunel-multitunel.sub1Body"></p>
+      <div class="prod-subcard-when"><b data-i18n="productos.cuandoEscogerlo"></b> <span data-i18n="productos.panels.tunel-multitunel.sub1When"></span></div>
     </div>
     <div class="prod-subcard">
-      <h3>Multitúnel</h3>
-      <p>Invernadero industrial de estructura totalmente metálica y cubierta curva, con cerramiento de malla mosquitera y láminas de EVA sujetas mediante perfiles de acero galvanizado.</p>
-      <div class="prod-subcard-when"><b>Cuándo escogerlo:</b> explotaciones tecnificadas que necesitan control climático avanzado y automatización.</div>
+      <h3 data-i18n="productos.panels.tunel-multitunel.sub2Title"></h3>
+      <p data-i18n="productos.panels.tunel-multitunel.sub2Body"></p>
+      <div class="prod-subcard-when"><b data-i18n="productos.cuandoEscogerlo"></b> <span data-i18n="productos.panels.tunel-multitunel.sub2When"></span></div>
     </div>
   </div>
 </section>
 
-<section id="riego" class="prod-panel" data-label="Instalaciones de riego">
+<section id="riego" class="prod-panel">
   <div class="prod-panel-inner">
     <div class="prod-panel-media">
-      <img src="../assets/cat-riego.jpg" alt="Instalaciones de riego">
+      <img src="../assets/cat-riego.jpg" data-i18n-attr='{"alt":"productos.panels.riego.imgAlt"}' alt="Instalaciones de riego">
     </div>
     <div class="prod-panel-body">
-      <span class="prod-eyebrow">Servicios e instalaciones</span>
-      <h2>Instalaciones de riego</h2>
-      <p class="prod-lead">Diseñamos e instalamos sistemas de riego adaptados a cada cultivo e invernadero, integrables con la automatización del clima para un control preciso del agua y un mejor aprovechamiento de los recursos.</p>
+      <span class="prod-eyebrow" data-i18n="productos.eyebrowServicios"></span>
+      <h2 data-i18n="productos.panels.riego.title"></h2>
+      <p class="prod-lead" data-i18n="productos.panels.riego.lead"></p>
       <ul class="prod-list">
-        <li>Automatización completa junto con el control climático del invernadero</li>
-        <li>Ahorro de agua y de mano de obra</li>
-        <li>Asesoramiento técnico personalizado de principio a fin</li>
+        <li data-i18n="productos.panels.riego.list1"></li>
+        <li data-i18n="productos.panels.riego.list2"></li>
+        <li data-i18n="productos.panels.riego.list3"></li>
       </ul>
-      <a href="../index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+      <a href="../index.html?asunto=presupuesto#formulario" class="btn btn-navy prod-cta-btn" data-i18n="nav.presupuesto"></a>
     </div>
   </div>
 </section>
 
-<section id="pantano" class="prod-panel" data-label="Cubrimientos de pantano">
+<section id="pantano" class="prod-panel">
   <div class="prod-panel-inner">
     <div class="prod-panel-media">
-      <img src="../assets/cat-pantano.jpg" alt="Cubrimientos de pantano">
+      <img src="../assets/cat-pantano.jpg" data-i18n-attr='{"alt":"productos.panels.pantano.imgAlt"}' alt="Cubrimientos de pantano">
     </div>
     <div class="prod-panel-body">
-      <span class="prod-eyebrow">Servicios e instalaciones</span>
-      <h2>Cubrimientos de pantano</h2>
-      <p class="prod-lead">Cubrimos balsas y pantanos de riego para proteger el agua acumulada de la evaporación, la suciedad y la proliferación de algas, alargando la vida útil del agua y de toda la instalación de riego.</p>
+      <span class="prod-eyebrow" data-i18n="productos.eyebrowServicios"></span>
+      <h2 data-i18n="productos.panels.pantano.title"></h2>
+      <p class="prod-lead" data-i18n="productos.panels.pantano.lead"></p>
       <ul class="prod-list">
-        <li>Reduce la evaporación y las pérdidas de agua</li>
-        <li>Protege la instalación de riego de suciedad y algas</li>
-        <li>Materiales resistentes a la intemperie</li>
+        <li data-i18n="productos.panels.pantano.list1"></li>
+        <li data-i18n="productos.panels.pantano.list2"></li>
+        <li data-i18n="productos.panels.pantano.list3"></li>
       </ul>
-      <a href="../index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+      <a href="../index.html?asunto=presupuesto#formulario" class="btn btn-navy prod-cta-btn" data-i18n="nav.presupuesto"></a>
     </div>
   </div>
 </section>
 
-<section id="malla-antihierba" class="prod-panel" data-label="Malla antihierba">
+<section id="malla-antihierba" class="prod-panel">
   <div class="prod-panel-inner">
     <div class="prod-panel-media">
-      <img src="../assets/cat-malla-antihierba.jpg" alt="Malla antihierba">
+      <img src="../assets/cat-malla-antihierba.jpg" data-i18n-attr='{"alt":"productos.panels.malla-antihierba.imgAlt"}' alt="Malla antihierba">
     </div>
     <div class="prod-panel-body">
-      <span class="prod-eyebrow">Servicios e instalaciones</span>
-      <h2>Malla antihierba</h2>
-      <p class="prod-lead">Tela cubresuelos que impide el crecimiento de malas hierbas bajo el cultivo, reduciendo el uso de herbicidas y las labores de mantenimiento. Disponible en distintos gramajes y colores según la necesidad de cada finca.</p>
+      <span class="prod-eyebrow" data-i18n="productos.eyebrowServicios"></span>
+      <h2 data-i18n="productos.panels.malla-antihierba.title"></h2>
+      <p class="prod-lead" data-i18n="productos.panels.malla-antihierba.lead"></p>
       <ul class="prod-list">
-        <li>Reduce el mantenimiento y el uso de herbicidas</li>
-        <li>Ayuda a conservar la humedad del suelo</li>
-        <li>Fácil de instalar y de larga duración</li>
+        <li data-i18n="productos.panels.malla-antihierba.list1"></li>
+        <li data-i18n="productos.panels.malla-antihierba.list2"></li>
+        <li data-i18n="productos.panels.malla-antihierba.list3"></li>
       </ul>
-      <a href="../index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+      <a href="../index.html?asunto=presupuesto#formulario" class="btn btn-navy prod-cta-btn" data-i18n="nav.presupuesto"></a>
     </div>
   </div>
 </section>
 
-<section id="cercados" class="prod-panel" data-label="Cercados">
+<section id="cercados" class="prod-panel">
   <div class="prod-panel-inner">
     <div class="prod-panel-media">
-      <img src="../assets/cat-cercados.jpg" alt="Cercados">
+      <img src="../assets/cat-cercados.jpg" data-i18n-attr='{"alt":"productos.panels.cercados.imgAlt"}' alt="Cercados">
     </div>
     <div class="prod-panel-body">
-      <span class="prod-eyebrow">Servicios e instalaciones</span>
-      <h2>Cercados</h2>
-      <p class="prod-lead">Ejecutamos cercados y vallados para delimitar y proteger tu finca: desde cercados con muro de hormigón hasta mallas simple torsión o anudada ganadera, con puertas, tensores y accesorios a medida.</p>
+      <span class="prod-eyebrow" data-i18n="productos.eyebrowServicios"></span>
+      <h2 data-i18n="productos.panels.cercados.title"></h2>
+      <p class="prod-lead" data-i18n="productos.panels.cercados.lead"></p>
       <ul class="prod-list">
-        <li>Materiales galvanizados de alta durabilidad</li>
-        <li>Diseño adaptado al uso: ganadero, perimetral o de seguridad</li>
-        <li>Instalación con maquinaria y transporte propios</li>
+        <li data-i18n="productos.panels.cercados.list1"></li>
+        <li data-i18n="productos.panels.cercados.list2"></li>
+        <li data-i18n="productos.panels.cercados.list3"></li>
       </ul>
-      <a href="../index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+      <a href="../index.html?asunto=presupuesto#formulario" class="btn btn-navy prod-cta-btn" data-i18n="nav.presupuesto"></a>
     </div>
   </div>
 </section>
 
-<section id="llave-en-mano" class="prod-panel" data-label="Proyectos llave en mano">
+<section id="llave-en-mano" class="prod-panel">
   <div class="prod-panel-inner">
     <div class="prod-panel-media">
-      <img src="../assets/cat-llave-en-mano.jpg" alt="Proyectos llave en mano">
+      <img src="../assets/cat-llave-en-mano.jpg" data-i18n-attr='{"alt":"productos.panels.llave-en-mano.imgAlt"}' alt="Proyectos llave en mano">
     </div>
     <div class="prod-panel-body">
-      <span class="prod-eyebrow">Servicios e instalaciones</span>
-      <h2>Proyectos llave en mano</h2>
-      <p class="prod-lead">Nos encargamos de tu proyecto de principio a fin: asesoramiento técnico personalizado, maquinaria y transporte propio, y ejecución completa de la obra, para que tú solo tengas que preocuparte de tu cosecha.</p>
+      <span class="prod-eyebrow" data-i18n="productos.eyebrowServicios"></span>
+      <h2 data-i18n="productos.panels.llave-en-mano.title"></h2>
+      <p class="prod-lead" data-i18n="productos.panels.llave-en-mano.lead"></p>
       <ul class="prod-list">
-        <li>Un único interlocutor durante todo el proyecto</li>
-        <li>Maquinaria de última generación y transporte propio</li>
-        <li>Materiales respaldados por certificaciones anuales de calidad</li>
+        <li data-i18n="productos.panels.llave-en-mano.list1"></li>
+        <li data-i18n="productos.panels.llave-en-mano.list2"></li>
+        <li data-i18n="productos.panels.llave-en-mano.list3"></li>
       </ul>
-      <a href="../index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+      <a href="../index.html?asunto=presupuesto#formulario" class="btn btn-navy prod-cta-btn" data-i18n="nav.presupuesto"></a>
     </div>
   </div>
 </section>
 
-<section id="mantenimientos" class="prod-panel" data-label="Mantenimientos agrícolas">
+<section id="mantenimientos" class="prod-panel">
   <div class="prod-panel-inner">
     <div class="prod-panel-media">
-      <img src="../assets/cat-mantenimientos.jpg" alt="Mantenimientos agrícolas">
+      <img src="../assets/cat-mantenimientos.jpg" data-i18n-attr='{"alt":"productos.panels.mantenimientos.imgAlt"}' alt="Mantenimientos agrícolas">
     </div>
     <div class="prod-panel-body">
-      <span class="prod-eyebrow">Servicios e instalaciones</span>
-      <h2>Mantenimientos agrícolas</h2>
-      <p class="prod-lead">Nos encargamos del mantenimiento y desarrollo de tus plantaciones, garantizando resultados óptimos y liberándote de preocupaciones, con maquinaria innovadora y técnicas avanzadas.</p>
+      <span class="prod-eyebrow" data-i18n="productos.eyebrowServicios"></span>
+      <h2 data-i18n="productos.panels.mantenimientos.title"></h2>
+      <p class="prod-lead" data-i18n="productos.panels.mantenimientos.lead"></p>
       <ul class="prod-list">
-        <li>Injerto y poda</li>
-        <li>Maquinaria y tractor propios</li>
-        <li>Transporte con camión grúa</li>
+        <li data-i18n="productos.panels.mantenimientos.list1"></li>
+        <li data-i18n="productos.panels.mantenimientos.list2"></li>
+        <li data-i18n="productos.panels.mantenimientos.list3"></li>
       </ul>
-      <a href="../index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-navy prod-cta-btn">Solicitar presupuesto</a>
+      <a href="../index.html?asunto=presupuesto#formulario" class="btn btn-navy prod-cta-btn" data-i18n="nav.presupuesto"></a>
     </div>
   </div>
 </section>
@@ -257,29 +261,29 @@
   <img src="../assets/walia-teaser.jpg" alt="Mateo e Hijo" class="prod-final-cta-img">
   <div class="prod-final-cta-scrim"></div>
   <div class="prod-final-cta-card">
-    <span class="badge badge-green">Desde 1979</span>
-    <h2>¿Necesitas asesoramiento para tu proyecto?</h2>
-    <p>Cuéntanos qué necesitas y nuestro equipo técnico te ayuda a elegir la solución más adecuada para tu finca.</p>
-    <a href="../index.html?asunto=Solicitar%20presupuesto#formulario" class="btn btn-green">Solicitar presupuesto</a>
-    <a href="../index.html" class="btn btn-primary">Volver al inicio</a>
+    <span class="badge badge-green" data-i18n="productos.finalCtaBadge"></span>
+    <h2 data-i18n="productos.finalCtaH2"></h2>
+    <p data-i18n="productos.finalCtaP"></p>
+    <a href="../index.html?asunto=presupuesto#formulario" class="btn btn-green" data-i18n="nav.presupuesto"></a>
+    <a href="../index.html" class="btn btn-primary" data-i18n="productos.finalCtaVolver"></a>
   </div>
 </section>
 
 <div id="privacyModal" class="modal-overlay" hidden>
   <div class="modal-box">
     <div class="modal-header">
-      <h2>Política de Privacidad</h2>
-      <button id="closePrivacy" aria-label="Cerrar">×</button>
+      <h2 data-i18n="modal.title"></h2>
+      <button id="closePrivacy" data-i18n-attr='{"aria-label":"modal.closeAria"}' aria-label="Cerrar">×</button>
     </div>
     <div class="modal-body">
-      <p>En cumplimiento del Reglamento (UE) 2016/679 y de la Ley Orgánica de Protección de Datos de Carácter Personal, le informamos de que la identidad del responsable que trata sus datos es:</p>
-      <p class="modal-bold">MANTENIMIENTOS Y ESTRUCT. AGRÍCOLAS MATEO E HIJO, S.L.U.<br>CIF: B42531897<br>Ctra Los Vives, 13 · 03315 Orihuela (Alicante)<br><a href="mailto:administracion@mateoehijo.com">administracion@mateoehijo.com</a></p>
-      <p>Los datos personales que tratamos en nuestra organización son los mínimos necesarios para contactar con usted, con la finalidad de enviarle información, incluida, en su caso, la comercial y/o publicitaria.</p>
-      <p>Le informamos de que todos ellos están protegidos con las seguridades necesarias y de que serán conservados exclusivamente hasta la finalización de la relación comercial o laboral. Este tratamiento se basa en nuestro interés legítimo en comunicarnos con usted, en cumplimiento y/o mantenimiento de relaciones comerciales o laborales.</p>
-      <p>Le informamos de que no compartiremos sus datos personales facilitados por usted.</p>
-      <p>Recuerde que tiene una serie de derechos en relación con el uso de sus datos personales. Le garantizamos el ejercicio del derecho de acceso, rectificación, supresión, oposición, limitación, portabilidad y oposición a la toma de decisiones.</p>
-      <p>A fin de que sus datos sean un fiel reflejo de la realidad, no dude en hacer uso de su derecho de rectificación en el caso de que estos sufran alguna modificación, cambio o anulación.</p>
-      <p>Puede ejercer todos estos derechos remitiendo un email a la dirección arriba indicada. También tiene derecho a presentar reclamaciones ante la Agencia Española de Protección de Datos y acudir a los Tribunales de Justicia.</p>
+      <p data-i18n="modal.p1"></p>
+      <p class="modal-bold" data-i18n-html="modal.p2"></p>
+      <p data-i18n="modal.p3"></p>
+      <p data-i18n="modal.p4"></p>
+      <p data-i18n="modal.p5"></p>
+      <p data-i18n="modal.p6"></p>
+      <p data-i18n="modal.p7"></p>
+      <p data-i18n="modal.p8"></p>
     </div>
   </div>
 </div>
@@ -288,7 +292,7 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <img src="../assets/letras-white.webp" alt="MATEO E HIJO" class="footer-logo">
-      <p class="footer-tagline">Desde 1979 protegiendo tus cosechas, <span class="accent-green">tejiendo tus sueños</span></p>
+      <p class="footer-tagline" data-i18n-html="footer.tagline">Desde 1979 protegiendo tus cosechas, <span class="accent-green">tejiendo tus sueños</span></p>
       <div class="social-links">
         <a href="https://www.linkedin.com/in/mateo-e-hijo-s-l-17a738368/" target="_blank" rel="noopener" aria-label="LinkedIn">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.5 9.5h5V22h-5zM9.5 9.5h4.8v1.7h.07c.67-1.2 2.3-2.05 4.13-2.05 3.3 0 4.5 2 4.5 5.4V22h-5v-6.2c0-1.5-.5-2.6-1.9-2.6-1.3 0-2.1.9-2.4 1.8-.1.3-.13.7-.13 1.1V22h-4.07z"/></svg>
@@ -303,10 +307,10 @@
     </div>
 
     <div class="footer-col">
-      <span class="footer-heading">Contacto</span>
+      <span class="footer-heading" data-i18n="nav.contacto"></span>
       <a href="https://www.google.com/maps/search/?api=1&query=Ctra+Los+Vives+13+03315+La+Murada+Orihuela+Alicante" target="_blank" rel="noopener" class="footer-link footer-link-icon">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-        <span>Ctra Los Vives, 13<br>03315 La Murada-Orihuela<br>(Alicante), España</span>
+        <span data-i18n-html="footer.direccion">Ctra Los Vives, 13<br>03315 La Murada-Orihuela<br>(Alicante), España</span>
       </a>
       <a href="tel:+34669394826" class="footer-link footer-link-icon">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M21 16.9v2.6a2 2 0 0 1-2.2 2 19.5 19.5 0 0 1-8.5-3 19.2 19.2 0 0 1-5.9-5.9 19.5 19.5 0 0 1-3-8.6A2 2 0 0 1 3.4 2H6a2 2 0 0 1 2 1.7c.1.9.35 1.8.7 2.7a2 2 0 0 1-.45 2.1L7.1 9.7a15.5 15.5 0 0 0 5.9 5.9l1.2-1.2a2 2 0 0 1 2.1-.45c.9.35 1.8.6 2.7.7A2 2 0 0 1 21 16.9z"></path></svg>
@@ -323,20 +327,20 @@
     </div>
 
     <div class="footer-col" id="footerProductos">
-      <span class="footer-heading">Productos</span>
+      <span class="footer-heading" data-i18n="nav.productos"></span>
     </div>
 
     <div class="footer-col-group">
       <div class="footer-col">
-        <span class="footer-heading">Empresa</span>
-        <a href="../empresa/empresa.html#historia" class="footer-link">Historia</a>
-        <a href="../empresa/empresa.html#equipo" class="footer-link">Equipo</a>
+        <span class="footer-heading" data-i18n="nav.empresa"></span>
+        <a href="../empresa/empresa.html#historia" class="footer-link" data-i18n="nav.historia"></a>
+        <a href="../empresa/empresa.html#equipo" class="footer-link" data-i18n="nav.equipo"></a>
       </div>
       <div class="footer-col">
-        <span class="footer-heading">Colabora</span>
-        <a href="../index.html?asunto=Solicitar%20presupuesto#formulario" class="footer-link">Solicitar presupuesto</a>
-        <a href="../index.html?asunto=Conviértete%20en%20distribuidor#formulario" class="footer-link">Conviértete en distribuidor</a>
-        <a href="../index.html?asunto=Trabaja%20con%20nosotros#formulario" class="footer-link">Trabaja con nosotros</a>
+        <span class="footer-heading" data-i18n="footer.colabora"></span>
+        <a href="../index.html?asunto=presupuesto#formulario" class="footer-link" data-i18n="nav.presupuesto"></a>
+        <a href="../index.html?asunto=distribuidor#formulario" class="footer-link" data-i18n="nav.distribuidor"></a>
+        <a href="../index.html?asunto=trabaja#formulario" class="footer-link" data-i18n="nav.trabaja"></a>
       </div>
     </div>
   </div>
@@ -344,13 +348,14 @@
   <div class="footer-bottom">
     <span>© 2026 Mateo e Hijo S.L.</span>
     <div class="footer-bottom-links">
-      <a href="../index.html#contacto">Aviso legal</a>
-      <a href="#" id="openPrivacy2">Privacidad</a>
+      <a href="../index.html#contacto" data-i18n="footer.avisoLegal"></a>
+      <a href="#" id="openPrivacy2" data-i18n="footer.privacidad"></a>
     </div>
   </div>
 </footer>
 
 <script src="../products-data.js"></script>
+<script src="../i18n.js"></script>
 <script src="../common.js"></script>
 <script src="productos.js"></script>
 </body>

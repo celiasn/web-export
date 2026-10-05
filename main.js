@@ -14,8 +14,8 @@
       slideEl.className = 'carousel-slide';
       slideEl.innerHTML = `
         <a href="${item.href}" class="carousel-slide-link">
-          <img src="${item.image}" alt="${item.label}">
-          <div class="carousel-caption"><span>${item.label}</span></div>
+          <img src="${item.image}" data-i18n-attr='{"alt":"${item.labelKey}"}'>
+          <div class="carousel-caption" data-i18n-attr='{"data-more-label":"home.carouselMore"}'><span data-i18n="${item.labelKey}"></span></div>
         </a>
       `;
       track.appendChild(slideEl);
@@ -24,6 +24,7 @@
       dot.addEventListener('click', () => goToSlide(i));
       dotsWrap.appendChild(dot);
     });
+    if (window.MEH_I18N) window.MEH_I18N.applyTranslations();
 
     function renderCarousel() {
       track.style.transform = `translateX(-${slide * 100}%)`;
@@ -51,12 +52,14 @@
     const formSentMsg = document.getElementById('formSentMsg');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const asunto = asuntoSelect.value || 'Consulta';
+      const t = window.MEH_I18N ? window.MEH_I18N.t : (k) => k;
+      const selectedOption = asuntoSelect.options[asuntoSelect.selectedIndex];
+      const asunto = (selectedOption && selectedOption.textContent) || t('mail.consultaFallback');
       const nombre = document.getElementById('nombre').value;
       const email = document.getElementById('email').value;
       const telefono = document.getElementById('telefono').value;
       const mensaje = document.getElementById('mensaje').value;
-      const body = `Nombre: ${nombre}\nEmail: ${email}\nTeléfono: ${telefono}\n\n${mensaje}`;
+      const body = `${t('mail.nombre')}: ${nombre}\n${t('mail.email')}: ${email}\n${t('mail.telefono')}: ${telefono}\n\n${mensaje}`;
       window.location.href = `mailto:gerencia@mateoehijo.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(body)}`;
       formSentMsg.hidden = false;
     });

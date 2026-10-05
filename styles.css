@@ -57,9 +57,29 @@ a:hover { color: var(--meh-navy); }
 #navMenu > li:hover .dropdown, #navMenu > li.open .dropdown { display: block; }
 .dropdown a { display: block; padding: 9px 20px; font-size: .9rem; color: var(--meh-navy); }
 .dropdown a:hover { color: var(--meh-cyan); }
-#navToggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; flex-direction: column; gap: 5px; }
+.nav-mobile-controls { display: none; align-items: center; gap: 10px; }
+#navToggle { background: none; border: none; cursor: pointer; padding: 8px; flex-direction: column; gap: 5px; }
 #navToggle span { display: block; width: 26px; height: 2px; background: #fff; transition: background .3s; }
 #navbar.solid #navToggle span { background: var(--meh-navy); }
+
+/* ---------- LANGUAGE SWITCHER ---------- */
+.lang-switcher { display: flex; align-items: center; gap: 2px; }
+.lang-option {
+  display: flex; align-items: center; gap: 5px; padding: 6px 10px; border-radius: var(--radius-pill);
+  border: 1px solid transparent; background: transparent; cursor: pointer;
+  font-family: var(--font-display); font-weight: 600; font-size: .78rem; letter-spacing: .02em;
+  color: inherit; opacity: .65; transition: opacity .2s ease, background .2s ease, border-color .2s ease;
+}
+.lang-flag img { display: block; width: 20px; height: auto; border-radius: 2px; }
+.lang-option:hover { opacity: 1; }
+.lang-option.active { opacity: 1; background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.4); }
+
+#navMenu > li.lang-switcher-item { padding: 0 0 0 4px; display: flex; align-items: center; }
+#navMenu > li.lang-switcher-item .lang-option,
+.nav-mobile-controls .lang-option { color: #fff; }
+#navbar.solid #navMenu > li.lang-switcher-item .lang-option,
+#navbar.solid .nav-mobile-controls .lang-option { color: var(--meh-navy); }
+#navbar.solid .lang-option.active { background: rgba(49,70,109,.1); border-color: rgba(49,70,109,.3); }
 
 /* ---------- BUTTONS ---------- */
 .btn {
@@ -126,7 +146,7 @@ a:hover { color: var(--meh-navy); }
 }
 .carousel-caption span { color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; }
 .carousel-caption::after {
-  content: 'Ver más ›'; color: #fff; font-family: var(--font-display); font-weight: 600;
+  content: attr(data-more-label); color: #fff; font-family: var(--font-display); font-weight: 600;
   font-size: .85rem; opacity: .85; white-space: nowrap;
 }
 .carousel-btn {
@@ -210,7 +230,16 @@ footer#contacto { background: var(--meh-navy); color: #fff; padding: 76px 0 0; }
 }
 
 @media (max-width: 768px) {
+  #navbar { padding: 0 20px; }
   #navToggle { display: flex; }
+  .nav-mobile-controls { display: flex; gap: 6px; }
+  .nav-mobile-controls .lang-option { padding: 5px; gap: 0; }
+  .nav-mobile-controls .lang-code { display: none; }
+  /* The menu list's own switcher only makes sense inline in the desktop
+     bar; on mobile it lives next to the toggle instead (.nav-mobile-controls),
+     since its position inside the expanding/collapsing dropdown made it
+     shift around and was hard to tap. */
+  #navMenu > li.lang-switcher-item { display: none; }
   #navMenu {
     position: absolute; top: 76px; left: 0; right: 0; background: #fff;
     flex-direction: column; align-items: stretch; gap: 0; padding: 8px 0;

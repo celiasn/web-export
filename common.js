@@ -30,6 +30,8 @@
   }
 
   // --- Populate Productos dropdown (nav) + footer ---
+  // Labels are filled in by i18n.js (data-i18n) so they stay translated
+  // when the visitor switches language.
   const productosDropdown = document.getElementById('productosDropdown');
   const footerProductos = document.getElementById('footerProductos');
   PRODUCTS.forEach((item) => {
@@ -37,17 +39,18 @@
     if (productosDropdown) {
       const a1 = document.createElement('a');
       a1.href = href;
-      a1.textContent = item.label;
+      a1.dataset.i18n = item.labelKey;
       productosDropdown.appendChild(a1);
     }
     if (footerProductos) {
       const a2 = document.createElement('a');
       a2.href = href;
       a2.className = 'footer-link';
-      a2.textContent = item.label;
+      a2.dataset.i18n = item.labelKey;
       footerProductos.appendChild(a2);
     }
   });
+  if (window.MEH_I18N) window.MEH_I18N.applyTranslations();
 
   // --- Contact form: pre-select "Asunto" from nav/footer/CTA links ---
   const asuntoSelect = document.getElementById('asunto');
