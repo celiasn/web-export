@@ -64,10 +64,6 @@
 .walia-chips { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 900px; margin: 0 auto; }
 .walia-chip { flex: 0 0 auto; padding: 16px 28px; background: #f6fafe; border: 1px solid #e2edf7; border-radius: 999px; font-family: var(--font-display); font-weight: 600; font-size: .95rem; color: #31466D; }
 
-.walia-cta { padding: 80px 10%; background: linear-gradient(135deg, #31466D 0%, #3058A4 100%); text-align: center; }
-.walia-cta h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.8rem, 4vw, 2.8rem); color: #fff; margin: 20px 0 16px; }
-.walia-cta p { color: rgba(255,255,255,.8); font-size: 1.1rem; margin: 0 auto 32px; max-width: 500px; line-height: 1.6; }
-
 .walia-contact { background: #f6fafe; }
 .walia-contact-intro { max-width: 640px; margin: 0 auto; text-align: center; }
 .walia-contact-intro h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.6rem, 3vw, 2.2rem); color: #31466D; margin: 14px 0 10px; }

@@ -22,6 +22,25 @@
   if (window.MEH_I18N) window.MEH_I18N.applyTranslations();
   const chips = Array.from(quicknav.querySelectorAll('.prod-chip'));
 
+  const prevBtn = document.getElementById('prodQuicknavPrev');
+  const nextBtn = document.getElementById('prodQuicknavNext');
+  if (prevBtn && nextBtn) {
+    const updateArrows = () => {
+      const maxScroll = quicknav.scrollWidth - quicknav.clientWidth;
+      prevBtn.hidden = quicknav.scrollLeft <= 2;
+      nextBtn.hidden = quicknav.scrollLeft >= maxScroll - 2;
+    };
+    prevBtn.addEventListener('click', () => {
+      quicknav.scrollBy({ left: -quicknav.clientWidth * 0.6, behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', () => {
+      quicknav.scrollBy({ left: quicknav.clientWidth * 0.6, behavior: 'smooth' });
+    });
+    quicknav.addEventListener('scroll', updateArrows);
+    window.addEventListener('resize', updateArrows);
+    updateArrows();
+  }
+
   function slugFromHash() {
     return location.hash.replace(/^#?s-/, '');
   }
