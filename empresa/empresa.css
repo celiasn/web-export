@@ -19,6 +19,12 @@
 .emp-split { display: flex; flex-wrap: wrap; align-items: center; gap: 56px; max-width: 1180px; margin: 0 auto; }
 .emp-split-media, .emp-split-copy { flex: 1 1 380px; }
 .emp-split-media img { width: 100%; height: 340px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-card); display: block; }
+.emp-split-media-phone {
+  display: flex; align-items: center; justify-content: center; height: 340px;
+  background: linear-gradient(135deg, rgba(191,224,99,.22), rgba(198,224,247,.3));
+  border-radius: var(--radius-md); box-shadow: var(--shadow-card); overflow: hidden;
+}
+.emp-split-media-phone img { width: auto; height: 94%; object-fit: contain; border-radius: 0; box-shadow: none; }
 .emp-split-year { font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; color: var(--meh-green-deep); display: block; margin-bottom: 12px; letter-spacing: .04em; }
 .emp-split-copy h2 { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.5rem, 2.8vw, 2rem); color: var(--meh-navy); margin: 0 0 16px; line-height: 1.2; }
 .emp-split-copy p { color: var(--meh-gray-500); font-size: 1.02rem; line-height: 1.75; margin: 0; }
@@ -75,6 +81,7 @@
   .emp-split { gap: 32px; }
   .emp-split-media { order: -1; }
   .emp-split-media img { height: 260px; }
+  .emp-split-media-phone { height: 260px; }
   .emp-timeline-section { padding: 56px 6%; }
   .emp-timeline { grid-template-columns: 1fr; gap: 28px; }
   .emp-team-intro { padding: 56px 6% 10px; }

@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WALIA® — Invernadero inteligente | Mateo e Hijo</title>
 <meta name="description" content="WALIA®: invernadero inteligente con plásticos retráctiles controlados desde el móvil. Un producto de Mateo e Hijo.">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="../styles.css?v=20261021">
 <link rel="stylesheet" href="walia.css?v=20261021">
@@ -20,6 +24,7 @@
     <div class="walia-nav-links">
       <a href="#producto" data-i18n="walia.navProducto"></a>
       <a href="#app" data-i18n="walia.navApp"></a>
+      <a href="#galeria" data-i18n="walia.navGaleria"></a>
       <a href="#cultivos" data-i18n="walia.navCultivos"></a>
       <a href="#contacto-walia" data-i18n="nav.contacto"></a>
     </div>
@@ -30,7 +35,7 @@
 <header class="walia-hero">
   <div class="walia-hero-banner">
     <img class="walia-hero-photo" src="../assets/PHOTO-2026-09-14-20-17-58.jpg" data-i18n-attr='{"alt":"walia.heroPhotoAlt"}' alt="Invernadero WALIA® con plásticos retráctiles">
-    <!-- <img class="walia-hero-logo" src="../assets/logo-walia.png" alt="WALIA® by Mateo e Hijo"> -->
+    <img class="walia-hero-logo" src="../assets/walia/walia-lockup-dark.png" alt="WALIA® by Mateo e Hijo">
   </div>
   <div class="walia-hero-copy">
     <p class="walia-hero-title" data-i18n="walia.heroTitle"></p>
@@ -71,33 +76,73 @@
 </section>
 
 <section id="app" class="walia-section walia-section-alt">
-  <div class="walia-split walia-split-reverse">
-    <div class="walia-split-media">
-      <img src="../assets/walia-app.png" alt="App WALIA®">
+  <span class="walia-eyebrow walia-center" data-i18n="walia.appEyebrow"></span>
+  <h2 class="walia-center" data-i18n="walia.appH2"></h2>
+  <p class="walia-lead walia-center walia-app-lead" data-i18n="walia.appLead"></p>
+
+  <div class="walia-app-screens">
+    <figure class="walia-app-screen">
+      <img src="../assets/walia/app-1-fincas.png" data-i18n-attr='{"alt":"walia.appScreen1Alt"}' alt="App WALIA®, listado de fincas">
+      <figcaption data-i18n="walia.appScreen1"></figcaption>
+    </figure>
+    <figure class="walia-app-screen">
+      <img src="../assets/walia/app-2-dashboard.png" data-i18n-attr='{"alt":"walia.appScreen2Alt"}' alt="App WALIA®, condiciones en directo de una finca">
+      <figcaption data-i18n="walia.appScreen2"></figcaption>
+    </figure>
+    <figure class="walia-app-screen">
+      <img src="../assets/walia/app-3-cortinas.png" data-i18n-attr='{"alt":"walia.appScreen3Alt"}' alt="App WALIA®, control manual de cortinas">
+      <figcaption data-i18n="walia.appScreen3"></figcaption>
+    </figure>
+  </div>
+
+  <div class="walia-data-grid">
+    <div class="walia-data-tile">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path></svg>
+      <span data-i18n="walia.dataTemp"></span>
     </div>
-    <div class="walia-split-copy">
-      <span class="walia-eyebrow" data-i18n="walia.appEyebrow"></span>
-      <h2 data-i18n="walia.appH2"></h2>
-      <p class="walia-lead" data-i18n="walia.appLead"></p>
-      <div class="walia-data-grid">
-        <div class="walia-data-tile">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path></svg>
-          <span data-i18n="walia.dataTemp"></span>
-        </div>
-        <div class="walia-data-tile">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
-          <span data-i18n="walia.dataHum"></span>
-        </div>
-        <div class="walia-data-tile">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"></path><path d="M16 14l-4 4-4-4"></path></svg>
-          <span data-i18n="walia.dataRain"></span>
-        </div>
-        <div class="walia-data-tile">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M5 3v16h16"></path><path d="M8 14l3-3 4 4 5-5"></path></svg>
-          <span data-i18n="walia.dataHist"></span>
-        </div>
-      </div>
+    <div class="walia-data-tile">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+      <span data-i18n="walia.dataHum"></span>
     </div>
+    <div class="walia-data-tile">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"></path><path d="M16 14l-4 4-4-4"></path></svg>
+      <span data-i18n="walia.dataRain"></span>
+    </div>
+    <div class="walia-data-tile">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6f913d" stroke-width="1.75" stroke-linecap="round"><path d="M5 3v16h16"></path><path d="M8 14l3-3 4 4 5-5"></path></svg>
+      <span data-i18n="walia.dataHist"></span>
+    </div>
+  </div>
+</section>
+
+<section id="galeria" class="walia-section walia-gallery">
+  <span class="walia-eyebrow walia-center" data-i18n="walia.galeriaEyebrow"></span>
+  <h2 class="walia-center" data-i18n="walia.galeriaH2"></h2>
+  <p class="walia-lead walia-center walia-cultivos-lead" data-i18n="walia.galeriaLead"></p>
+  <div class="walia-gallery-grid">
+    <figure class="walia-gallery-item">
+      <img src="../assets/PHOTO-2026-09-14-20-17-58.jpg" data-i18n-attr='{"alt":"walia.gallery1Alt"}' alt="Invernadero WALIA® con plásticos retráctiles en campo">
+      <figcaption data-i18n="walia.gallery1"></figcaption>
+    </figure>
+    <figure class="walia-gallery-item">
+      <img src="../assets/cat-walia.jpg" data-i18n-attr='{"alt":"walia.gallery2Alt"}' alt="Estructura de malla retráctil WALIA®">
+      <figcaption data-i18n="walia.gallery2"></figcaption>
+    </figure>
+    <figure class="walia-gallery-item walia-gallery-render">
+      <img src="../assets/walia/walia-render-1.jpg" data-i18n-attr='{"alt":"walia.gallery3Alt"}' alt="Render conceptual del sistema WALIA® entre los cultivos">
+      <span class="walia-gallery-tag" data-i18n="walia.renderTag"></span>
+      <figcaption data-i18n="walia.gallery3"></figcaption>
+    </figure>
+    <figure class="walia-gallery-item walia-gallery-render">
+      <img src="../assets/walia/walia-render-5.jpg" data-i18n-attr='{"alt":"walia.gallery4Alt"}' alt="Render conceptual, vista panorámica del invernadero WALIA®">
+      <span class="walia-gallery-tag" data-i18n="walia.renderTag"></span>
+      <figcaption data-i18n="walia.gallery4"></figcaption>
+    </figure>
+    <figure class="walia-gallery-item walia-gallery-render">
+      <img src="../assets/walia/walia-render-2.jpg" data-i18n-attr='{"alt":"walia.gallery6Alt"}' alt="Render conceptual nocturno del invernadero WALIA®, con baterías para funcionar de noche">
+      <span class="walia-gallery-tag" data-i18n="walia.renderTag"></span>
+      <figcaption data-i18n="walia.gallery6"></figcaption>
+    </figure>
   </div>
 </section>
 
